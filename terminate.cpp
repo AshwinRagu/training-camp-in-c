@@ -1,13 +1,18 @@
 #include<stdio.h>
 int main()
 {
-	int a;
+	int a,x=0;
 	for(int i=0;;i++)
 	{
 	scanf(" %d",&a);
-	if(a==-1)
+	if(x<a)
 	{
-		break;
+		x=a;
 	}
-}
+	if(a==-1)
+		{
+			printf("largest number : %d",x);
+			break;
+		}
+	}
 }
